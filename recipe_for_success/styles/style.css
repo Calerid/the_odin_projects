@@ -10,7 +10,15 @@ h1 {
 a{
     text-decoration: none;
 }
-
+p{
+    text-align: center;
+}
+ol{
+    text-align: center;
+}
+li{
+    text-align: center;
+}
 #fire{
     background: teal;
     border-radius: .4em;
