@@ -1,15 +1,14 @@
 html {
     background-color: black ;
     color: white ;
+}
+
+h1 {
     text-align: center;
 }
 
 a{
     text-decoration: none;
-}
-
-ol {
-    text-align: center;
 }
 
 #fire{
