@@ -1,24 +1,33 @@
 html {
-    background-color: black ;
-    color: white ;
-    text-align: center;
+  display: grid;
+  background-color: black;
+  color: white;
+  text-align: center;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-ol {
-    text-align: center;
+img {
+  margin: 15em;
+  margin-top: 0em;
+  margin-bottom: 0em;
 }
 
-#fire{
-    background: teal;
-    border-radius: .4em;
-    padding-top: 2em;
-    padding-left: 1em;
-    padding-right: 1em;
-    margin: auto;
-    width: 25em;
-    height: 15em;
+#ul {
+  margin-top: 1em;
+  margin-left: 35em;
+  margin-right: 35em;
+  background: #0cb854;
+  border-radius: 0.25em;
+  padding: 10px;
+}
+#ol {
+  margin-top: 1em;
+  margin-left: 35em;
+  margin-right: 35em;
+  background: #129797;
+  border-radius: 0.25em;
+  padding: 10px;
 }
