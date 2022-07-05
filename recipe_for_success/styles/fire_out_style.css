@@ -4,7 +4,10 @@ html {
   color: white;
   text-align: center;
 }
-
+h1 {
+  font-style: "Lobster", cursive;
+  color: red;
+}
 a {
   text-decoration: none;
 }

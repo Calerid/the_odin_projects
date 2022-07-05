@@ -5,10 +5,14 @@ html {
 
 h1 {
     text-align: center;
+    font-family: 'Lobster', cursive;
 }
 
 a{
     text-decoration: none;
+}
+p{
+    text-align: center;
 }
 
 #fire{
