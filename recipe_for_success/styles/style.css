@@ -14,7 +14,16 @@ a{
 p{
     text-align: center;
 }
+<<<<<<< HEAD
 
+=======
+ol{
+    text-align: center;
+}
+li{
+    text-align: center;
+}
+>>>>>>> 1ef50b8f96ef785f07da976ba3586efa28712736
 #fire{
     background: teal;
     border-radius: .4em;
