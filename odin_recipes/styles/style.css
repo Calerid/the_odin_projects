@@ -26,9 +26,9 @@ li {
   text-align: center;
 }
 .project-buttons {
-  display: block;
-  text-align: center;
-
+    display: block;
+    text-align: center;
+    
   margin: auto;
   color: white;
   text-decoration: none;
