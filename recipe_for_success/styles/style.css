@@ -19,12 +19,14 @@ li{
     text-align: center;
 }
 #fire{
+    display: inline-block;
+    color: white;
     background: teal;
     border-radius: .4em;
     margin: auto;
-    padding-top: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-top: .75em;
+    padding-left: .5em;
+    padding-right: .5em;
     height: 2em;
     width: 5em;
 }
