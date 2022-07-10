@@ -1,0 +1,13 @@
+a{
+    text-decoration: none;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#header-links{
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-between;
+}
