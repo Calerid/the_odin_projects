@@ -1,13 +1,20 @@
 a{
     text-decoration: none;
 }
-header{
+
+.flex-container{
     display: flex;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+header{
     align-items: center;
     justify-content: space-evenly;
 }
 #header-links{
-    display: flex;
     align-content: flex-start;
     justify-content: space-between;
 }
