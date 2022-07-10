@@ -1,5 +1,6 @@
 a{
     text-decoration: none;
+    color: F9FaF8;
 }
 
 .flex-container{
@@ -11,10 +12,18 @@ a{
 }
 
 header{
+    color: F9FaF8;
+    display: flex;
+    flex: auto;
+    background: #1F2937;
     align-items: center;
-    justify-content: space-evenly;
+    align-content: flex-end;
+   
 }
-#header-links{
-    align-content: flex-start;
+#header-flex-left{
+    flex: 1;
+}
+#header-links-right{
+    gap: 10px;
     justify-content: space-between;
 }
