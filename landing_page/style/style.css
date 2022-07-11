@@ -1,51 +1,60 @@
-body{
-    margin: 0px;
-    padding: 0px;
+body {
+  margin: 0px;
+  padding: 0px;
 }
-a{
-    text-decoration: none;
-    color: F9FaF8;
+a {
+  text-decoration: none;
+  color: F9FaF8;
 }
-header{
-    color: F9FaF8;
-    display: flex;
-    flex: auto;
-    background: #1F2937;
-    align-items: center;
-    justify-items: flex-end;
-    justify-content: space-around;
+header {
+  color: F9FaF8;
+  display: flex;
+  flex: auto;
+  background: #1f2937;
+  align-items: center;
+  justify-items: flex-end;
+  justify-content: space-around;
 }
-.flex-container{
-    display: flex;
+.flex-container {
+  display: flex;
 }
 
-.flex-column{
-    flex-direction: column;
+.flex-column {
+  flex-direction: column;
 }
-.remove-padding{
-    padding: 0px;
-    margin: 0px;
+.remove-padding {
+  padding: 0px;
+  margin: 0px;
 }
-#header-background{
-    background: #1F2937;
+.button {
+  background-color: #3882f6;
+  text-align: center;
+  border-radius: 0.5em;
+  margin-top: 10px;
+  padding: 5px;
+  width: 6em;
 }
-#header-links-right{
-    gap: 15px;
-    font-size: 18px;
+#header-background {
+  background: #1f2937;
 }
-#main-content-container{
-    color: white;
-    padding: 2em;
-    padding-bottom: 5em;
-    justify-content: space-around;
+#header-links-right {
+  gap: 15px;
+  font-size: 18px;
 }
-#header-left{
-    justify-content: space-around;
+#main-content-container {
+  color: white;
+  padding: 2em;
+  padding-bottom: 5em;
+  justify-content: space-around;
 }
-#header-right{
-    width: 300px;
-    margin: 20px;
-    padding: 30px;
-    text-align: center;
-    background: grey;
+#header-left {
+  display: flex;
+  justify-content: space-around;
+}
+#header-right {
+  width: 300px;
+  margin: 20px;
+  padding: 30px;
+  text-align: center;
+  background: grey;
 }
