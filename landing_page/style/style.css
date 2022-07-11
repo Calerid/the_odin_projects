@@ -31,6 +31,7 @@ header{
 }
 #header-links-right{
     gap: 15px;
+    font-size: 18px;
 }
 #main-content-container{
     color: white;
