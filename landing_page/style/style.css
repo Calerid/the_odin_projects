@@ -46,6 +46,8 @@ header {
   padding: 2em;
   padding-bottom: 5em;
   justify-content: space-around;
+  margin-left: 2.5em;
+  margin-right: 2.5em;
 }
 #header-left {
   display: flex;
@@ -53,8 +55,8 @@ header {
 }
 #header-right {
   width: 40em;
-  margin: 20px;
-  padding: 30px;
+  margin: 1em;
+  padding: 1.75em;
   padding-top: 5em;
   text-align: center;
   background: grey;
