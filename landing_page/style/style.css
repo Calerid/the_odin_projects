@@ -18,7 +18,6 @@ header {
 .flex-container {
   display: flex;
 }
-
 .flex-column {
   flex-direction: column;
 }
@@ -33,6 +32,11 @@ header {
   margin-top: 10px;
   padding: 5px;
   width: 6em;
+}
+.box{
+  border-style: solid;
+  height: 5em;
+  width: 5em;
 }
 #header-background {
   background: #1f2937;
@@ -61,13 +65,16 @@ header {
   text-align: center;
   background: grey;
 }
-#hero{
-    font-size: 48px;
+#hero {
+  font-size: 48px;
 }
-#section-two h2{
+#section-two h2 {
   text-align: center;
 }
-#content-illustration-container{
-  
-
+#content-illustration-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
 }
+
