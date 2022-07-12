@@ -35,6 +35,9 @@ header {
 }
 .box{
   border-style: solid;
+  border-width: 2px;
+  border-color: #3882f6;
+  border-radius: .75em;
   height: 5em;
   width: 5em;
 }
@@ -74,7 +77,7 @@ header {
 #content-illustration-container {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  align-content: center;
+  align-content: flex-end;
+  text-align: center;
 }
 
