@@ -80,4 +80,8 @@ header {
   text-align: center;
   gap: 2em;
 }
+#quote-section{
+  background-color: #E5E7EB;
+  text-align: center;
+} 
 
