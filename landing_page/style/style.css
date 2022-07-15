@@ -93,9 +93,10 @@ header {
 }
 #quote-section p {
   padding-bottom: 4em;
+  padding-left: 30em;
 }
 #thor-container{
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 
