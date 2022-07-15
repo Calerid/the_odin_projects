@@ -15,6 +15,16 @@ header {
   justify-items: flex-end;
   justify-content: space-around;
 }
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #1f2937;
+  color: #F9FAF8;
+  margin-bottom: -1;
+  padding-bottom: 1;
+  text-align: center;
+}
 .flex-container {
   display: flex;
 }
@@ -102,5 +112,5 @@ header {
 #thor-container{
   justify-content: space-between;
 }
-#
+
 
