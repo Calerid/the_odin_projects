@@ -16,13 +16,14 @@ header {
   justify-content: space-around;
 }
 footer{
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
   background: #1f2937;
   color: #F9FAF8;
   margin-bottom: -1;
   padding-bottom: 1;
+  padding-top: 5px;
   text-align: center;
 }
 .flex-container {
@@ -110,7 +111,10 @@ footer{
   padding-left: 30em;
 }
 #thor-container{
-  justify-content: space-between;
+  margin-top: 5em;
+  background-color: #3882f6;
+  border-radius: .4em;
 }
+
 
 
