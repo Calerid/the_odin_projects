@@ -75,6 +75,7 @@ header {
   text-align: center;
 }
 #content-illustration-container {
+  margin-bottom: 4em;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -84,11 +85,17 @@ header {
   background-color: #E5E7EB;
   align-items: center;
 } 
-#quote-section h2{
-
+#quote-section h3{ 
+  font-size: 36px;
+  font-style: italic;
+  font-weight: light;
+  padding-top: 2em;
 }
 #quote-section p {
-  align-items: flex-end;
+  padding-bottom: 4em;
+}
+#thor-container{
+  justify-content: space-around;
 }
 
 
