@@ -82,6 +82,13 @@ header {
 }
 #quote-section{
   background-color: #E5E7EB;
-  text-align: center;
+  align-items: center;
 } 
+#quote-section h2{
+
+}
+#quote-section p {
+  align-items: flex-end;
+}
+
 
