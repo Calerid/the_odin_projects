@@ -110,10 +110,11 @@ footer{
   padding-bottom: 4em;
   padding-left: 30em;
 }
-#thor-container{
-  margin-top: 5em;
+#registration-container{
   background-color: #3882f6;
   border-radius: .4em;
+  width: 30vw;
+  margin: 8em;
 }
 
 
