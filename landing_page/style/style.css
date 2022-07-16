@@ -111,10 +111,20 @@ footer{
   padding-left: 30em;
 }
 #registration-container{
+  padding: 1em;
+  padding-left: 4em;
+  padding-right: 4em;
   background-color: #3882f6;
   border-radius: .4em;
-  width: 30vw;
   margin: 8em;
+}
+#registration-container a{
+  border-style: solid;
+  padding: .7em;
+  height: 4px;
+}
+#format-right{
+  flex: 2;
 }
 
 
