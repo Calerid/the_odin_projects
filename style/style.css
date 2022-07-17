@@ -1,0 +1,32 @@
+html {
+    background-color: black;
+    color: white;
+  }
+  h1 {
+    text-align: center;
+    font-family: "Lobster", cursive;
+    color: red;
+    font-size: 50px;
+  }
+  a {
+    text-decoration: none;
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 100vw;
+  }
+  .project-buttons {
+    font-size: 20px;
+    width: 40em;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    background: teal;
+    padding: 10px;
+    border-radius: 0.5em;
+  }
+
+
+  
