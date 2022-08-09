@@ -22,8 +22,9 @@ const DRAWS = getElementById("draws");
 //variables in this section will change based on game logic. They will update values based on the game logic.
 let rounds = 0;
 let wins = 0;
+let losses = 0;
 let draws = 0;
-let draws = 0;
+
 
 function roundInitiate(playerChoice, rounds){
     let computerChoice = gameChoices[Math.floor(Math.random() * 2)];
@@ -31,4 +32,8 @@ function roundInitiate(playerChoice, rounds){
     return choiceComparison(playerChoice, computerChoice)
 };
 
-
+function roundCounter(ROUNDS, rounds) {
+    rounds += 1;
+    let roundsUpdate = `Rounds: ${rounds}`;
+    ROUNDS.innerHTML = roundsUpdate;
+};
