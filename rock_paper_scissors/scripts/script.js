@@ -10,7 +10,7 @@ const SCISSORS = document.getElementById("scissors");
 
 //This variable will call a function to reset the entire game.
 
-const RESET = document.getElementById("reset").addEventListener('click', reset());
+const RESET = document.getElementById("reset");
 
 //Variables in this section will be used to update the game values in the index.html file.
 
@@ -27,7 +27,8 @@ let draws = 0;
 
 ROCK.addEventListener('click', roundInitiate(gameChoices[0]))
 PAPER.addEventListener('click', roundInitiate(gameChoices[1]))
-SCISSORS..addEventListener('click', roundInitiate(gameChoices[2]))
+SCISSORS.addEventListener('click', roundInitiate(gameChoices[2]))
+RESET.addEventListener('click', reset());
 
 function roundInitiate(playerChoice, rounds){
     let computerChoice = gameChoices[Math.floor(Math.random() * 2)];
@@ -38,4 +39,7 @@ function roundCounter(ROUNDS, rounds) {
     rounds += 1;
     let roundsUpdate = `Rounds: ${rounds}`;
     ROUNDS.innerHTML = roundsUpdate;
+};
+reset(){
+
 };
