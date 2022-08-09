@@ -27,6 +27,10 @@ let wins = 0;
 let draws = 0;
 let draws = 0;
 
-
+function roundInitiate(playerChoice, rounds){
+    let computerChoice = gameChoices[Math.floor(Math.random() * 3)];
+    roundCounter(rounds)
+    return choiceComparison(playerChoice, computerChoice)
+};
 
 
