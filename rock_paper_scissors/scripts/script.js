@@ -1,14 +1,12 @@
 // Variables in this section will be applied to game logic through event listeners contained on ROCK, PAPER, and SCISSORS.
 
-const SELECTROCK = "rock"
-const SELECTPAPER = "paper"
-const SELECTSCISSORS = "scissors"
+const gameChoices = ["rock", "paper", "scissors"];
 
 //Variables in this section will initiate the game and pass on the variables in the previous section.
 
-const ROCK = document.getElementById("rock").addEventListener('click', roundInitiate(ROCK));
-const PAPER = document.getElementById("paper").addEventListener('click', roundInitiate(PAPER));
-const SCISSORS = document.getElementById("scissors").addEventListener('click', roundInitiate(SCISSORS));
+const ROCK = document.getElementById("rock").addEventListener('click', roundInitiate(gameChoices[0]));
+const PAPER = document.getElementById("paper").addEventListener('click', roundInitiate(gameChoices[1]));
+const SCISSORS = document.getElementById("scissors").addEventListener('click', roundInitiate(gameChoices[2]));
 
 //This variable will call a function to reset the entire game.
 
@@ -28,7 +26,7 @@ let draws = 0;
 let draws = 0;
 
 function roundInitiate(playerChoice, rounds){
-    let computerChoice = gameChoices[Math.floor(Math.random() * 3)];
+    let computerChoice = gameChoices[Math.floor(Math.random() * 2)];
     roundCounter(rounds)
     return choiceComparison(playerChoice, computerChoice)
 };
