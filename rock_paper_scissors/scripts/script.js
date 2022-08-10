@@ -8,3 +8,5 @@ let round = 0;
 let wins = 0;
 let loss = 0;
 let draws = 0;
+
+const gameChoices = ["rock", "paper", "scissors"];
