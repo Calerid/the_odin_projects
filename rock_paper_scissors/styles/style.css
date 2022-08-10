@@ -1,0 +1,26 @@
+h1{
+    text-align: center;
+    margin: .5em;
+}
+button{
+    height: 5em;
+    width: 10em;
+    margin: .5em;
+}
+#round-container{
+    justify-content: center;
+    margin: 5em;
+}
+.flex-container{
+    display: flex;
+}
+#score-container{
+    justify-content: center;
+}
+#score-container h2{
+    margin: .5em;
+    margin-bottom: 5em;
+}
+#button-container{
+    justify-content: space-evenly;
+}
