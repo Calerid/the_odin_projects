@@ -14,27 +14,41 @@ let draws = 0;
 
 const gameChoices = ["rock", "paper", "scissors"];
 
-ROCK_BUTTON.addEventListener("click",function(){beginRound("rock", round)});
-PAPER_BUTTON.addEventListener("click",function(){beginRound("paper", round)});
-SCISSORS_BUTTON.addEventListener("click",function(){beginRound("scissors", round)});
+ROCK_BUTTON.addEventListener("click", function () {
+  beginRound("rock", (round += 1));
+});
+PAPER_BUTTON.addEventListener("click", function () {
+  beginRound("paper", (round += 1));
+});
+SCISSORS_BUTTON.addEventListener("click", function () {
+  beginRound("scissors", (round += 1));
+});
 
-function beginRound(playerSelection, round){
-    let playerChoice = playerSelection;
-    let computerChoice = Math.floor(Math.random() * 2);
-    roundCounter(round);
-    console.log(playerChoice);
+function beginRound(playerSelection, round) {
+  let playerChoice = playerSelection;
+  let computerChoice = Math.floor(Math.random() * 2);
+  roundCounter(round);
+  console.log(playerChoice);
 }
 
-function roundCounter(round){
-if (round < 5){
-    round += round;
-    ROUND_H1.innerHTML = "Round: " + round;
-    return round
-} else if (round == 5){
-    if (wins > losses){
-        console.log("You Win")
+function roundCounter(round, wins, loss) {
+  if (round < 5) {
+    roundUpdate(round);
+  } else if (round == 5) {
+    if (wins > loss) {
+      roundUpdate(round);
+      console.log("You Win");
     } else {
-        console.log("You loose!")
+      console.log("You loose!");
+      roundUpdate(round);
     }
+  }
 }
+
+function roundUpdate(round) {
+  if (round < 6) {
+    ROUND_H1.textContent = "Rounds: " + round;
+  } else if (rounds == 5){
+    resetGame();
+  }
 }
