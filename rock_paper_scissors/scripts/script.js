@@ -26,5 +26,15 @@ function beginRound(playerSelection, round){
 }
 
 function roundCounter(round){
-
+if (round < 5){
+    round += round;
+    ROUND_H1.innerHTML = "Round: " + round;
+    return round
+} else if (round == 5){
+    if (wins > losses){
+        console.log("You Win")
+    } else {
+        console.log("You loose!")
+    }
+}
 }
