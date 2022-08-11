@@ -14,11 +14,17 @@ let draws = 0;
 
 const gameChoices = ["rock", "paper", "scissors"];
 
-ROCK_BUTTON.addEventListener("click", beginRound(gameChoices[0]));
-PAPER_BUTTON.addEventListener("click", beginRound(gameChoices[1]));
-SCISSORS_BUTTON.addEventListener("click", beginRound(gameChoices[2]));
+ROCK_BUTTON.addEventListener("click",function(){beginRound("rock", round)});
+PAPER_BUTTON.addEventListener("click",function(){beginRound("paper", round)});
+SCISSORS_BUTTON.addEventListener("click",function(){beginRound("scissors", round)});
 
-function beginRound(gameChoices, round){
+function beginRound(playerSelection, round){
+    let playerChoice = playerSelection;
     let computerChoice = Math.floor(Math.random() * 2);
     roundCounter(round);
+    console.log(playerChoice);
+}
+
+function roundCounter(round){
+
 }
