@@ -59,3 +59,21 @@ function resetGame(){
   draws = 0;
   loss = 0;
 }
+
+function winsUpdate(){
+  wins += 1
+  WIN_H2.textContent = "Wins: " + wins;
+  return wins;
+}
+
+function lossUpdate(){
+  loss += 1
+  LOSS_H2.textContent = "loss: " + loss;
+  return loss;
+}
+
+function drawsUpdate(){
+  wins += 1
+  DRAW_H2.textContent = "Draws: " + draws;
+  return draws;
+}
