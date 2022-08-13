@@ -7,12 +7,12 @@ const WIN_H2 = document.getElementById("win");
 const LOSS_H2 = document.getElementById("loss");
 const DRAW_H2 = document.getElementById("draw");
 
-var round = 0;
+const gameChoices = ["rock", "paper", "scissors"];
+
+let round = 0;
 let wins = 0;
 let loss = 0;
 let draws = 0;
-
-const gameChoices = ["rock", "paper", "scissors"];
 
 ROCK_BUTTON.addEventListener("click", function () {
   beginRound("rock", (round += 1));
@@ -61,19 +61,19 @@ function resetGame(){
 }
 
 function winsUpdate(){
-  wins += 1
+  wins += 1;
   WIN_H2.textContent = "Wins: " + wins;
   return wins;
 }
 
 function lossUpdate(){
-  loss += 1
+  loss += 1;
   LOSS_H2.textContent = "loss: " + loss;
   return loss;
 }
 
 function drawsUpdate(){
-  wins += 1
+  draws += 1;
   DRAW_H2.textContent = "Draws: " + draws;
   return draws;
 }
