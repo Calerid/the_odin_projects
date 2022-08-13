@@ -27,28 +27,7 @@ SCISSORS_BUTTON.addEventListener("click", function () {
 function beginRound(playerSelection) {
   let playerChoice = playerSelection;
   let computerChoice = gameChoices[Math.floor(Math.random() * 2)];
-  console.log(`It is Round ${round}`);
-  console.log(`The player chose ${playerChoice}`);
-  console.log(`The computer chose ${computerChoice}`);
-  roundCounter(playerChoice, computerChoice);
-
-function roundCounter() {
-  if (wins >= 3){
-    alert("You win!");
-    resetGame();
-  } else if (loss >= 3){
-    alert("You Lose!");
-    resetGame();
-  } else if (draws >= 3){
-    alert("This game was a draw")
-    resetGame();
-  } else if (round == 5){
-    alert("This game was a draw")
-    resetGame();
-  } else if (round <= 5){
-    roundUpdate(round);
-    roundPathing(playerChoice, computerChoice);
-  }
+  roundPathing(playerChoice, computerChoice);
 }
 
 function roundUpdate() {
@@ -69,7 +48,11 @@ function resetGame(){
   DRAW_H2.textContent = "Draws: " + draws;
 }
 
-function roundPathing(){
+function roundPathing(playerChoice, computerChoice){
+  roundUpdate();
+  console.log(`It is Round ${round}`);
+  console.log(`The player chose ${playerChoice}`);
+  console.log(`The computer chose ${computerChoice}`);
   if (playerChoice === computerChoice){
     drawsUpdate();
   } else if (playerChoice === "rock"){
@@ -79,7 +62,6 @@ function roundPathing(){
   } else {
     playScissors(computerChoice);
   }
-}
 }
 
 function winsUpdate(){
@@ -103,6 +85,7 @@ function drawsUpdate(){
   DRAW_H2.textContent = "Draws: " + draws;
   console.log("This was a draw");
   logScore()
+  roundCounter();
   return draws;
 }
 
@@ -114,6 +97,8 @@ function playRock(computerChoice){
   console.log("paper wins")
   lossUpdate();
  }
+ roundCounter();
+
 }
 
 
@@ -125,6 +110,7 @@ function playPaper(computerChoice){
     console.log("scissors wins");
     lossUpdate();
   }
+  roundCounter();
 }
 
 
@@ -136,7 +122,7 @@ function playScissors(computerChoice){
     console.log("rock wins");
     lossUpdate();
   }
-
+  roundCounter();
 }
 
 function logScore(){
@@ -144,4 +130,26 @@ function logScore(){
   console.log(`Wins: ${wins}`);
   console.log(`Losses: ${loss}`);
   console.log(`Draws: ${draws}`);
+}
+
+function roundCounter(){
+  setTimeout(() => {
+  if (wins == 3){
+    console.log("You win!");
+    alert("You win!");
+    resetGame();
+  } else if (loss == 3){
+    console.log("You Lose!");
+    alert("You Lose!");
+    resetGame();
+  } else if (draws == 3){
+    console.log("This game was a draw!");
+    alert("This game was a draw");
+    resetGame();
+  } else if (round == 5){
+    console.log("This game was a draw!");
+    alert("This game was a draw");
+    resetGame();
+  }
+}, 20)
 }
