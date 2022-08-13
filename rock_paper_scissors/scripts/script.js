@@ -32,7 +32,7 @@ function beginRound(playerSelection, round) {
 }
 
 function roundCounter(round, wins, loss) {
-  if (round < 5) {
+  if (round <= 5) {
     roundUpdate(round);
   } else if (round == 5) {
     if (wins > loss) {
@@ -42,13 +42,20 @@ function roundCounter(round, wins, loss) {
       console.log("You loose!");
       roundUpdate(round);
     }
+  } else if (round === 6){
+    resetGame();
   }
 }
 
 function roundUpdate(round) {
   if (round < 6) {
     ROUND_H1.textContent = "Rounds: " + round;
-  } else if (rounds == 5){
-    resetGame();
   }
+}
+
+function resetGame(){
+  round = 0;
+  wins = 0;
+  draws = 0;
+  loss = 0;
 }
