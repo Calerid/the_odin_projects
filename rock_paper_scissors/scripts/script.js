@@ -58,6 +58,10 @@ function resetGame(){
   wins = 0;
   draws = 0;
   loss = 0;
+  ROUND_H1.textContent = "Rounds: " + round;
+  WIN_H2.textContent = "Wins: " + wins;
+  LOSS_H2.textContent = "loss: " + loss;
+  DRAW_H2.textContent = "Draws: " + draws;
 }
 
 function winsUpdate(){
