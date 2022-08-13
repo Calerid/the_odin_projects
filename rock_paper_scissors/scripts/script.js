@@ -26,22 +26,27 @@ SCISSORS_BUTTON.addEventListener("click", function () {
 
 function beginRound(playerSelection, round) {
   let playerChoice = playerSelection;
-  let computerChoice = Math.floor(Math.random() * 2);
+  let computerChoice = gameChoices[Math.floor(Math.random() * 2)];
   roundCounter(round);
-  console.log(playerChoice);
+  console.log(`It is Round ${round}`);
+  console.log(`The player chose ${playerChoice}`);
+  console.log(`The computer chose ${computerChoice}`);
+  if (playerChoice === computerChoice){
+    drawsUpdate();
+  } else if (playerChoice === "rock"){
+    playRock();
+  } else if (playerChoice === "paper"){
+    playPaper();
+  } else {
+    playScissors();
+  }
 }
 
 function roundCounter(round, wins, loss) {
   if (round <= 5) {
     roundUpdate(round);
   } else if (round == 5) {
-    if (wins > loss) {
-      roundUpdate(round);
-      console.log("You Win");
-    } else {
-      console.log("You loose!");
-      roundUpdate(round);
-    }
+    
   } else if (round === 6){
     resetGame();
   }
@@ -67,17 +72,24 @@ function resetGame(){
 function winsUpdate(){
   wins += 1;
   WIN_H2.textContent = "Wins: " + wins;
+  console.log("You won this round");
+  logScore();
   return wins;
 }
 
 function lossUpdate(){
   loss += 1;
   LOSS_H2.textContent = "loss: " + loss;
+  console.log("You lost this round")
+  logScore()
   return loss;
 }
 
 function drawsUpdate(){
   draws += 1;
   DRAW_H2.textContent = "Draws: " + draws;
+  console.log("This was a draw");
+  logScore()
   return draws;
 }
+
