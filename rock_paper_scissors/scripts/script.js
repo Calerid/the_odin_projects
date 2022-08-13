@@ -15,19 +15,19 @@ let loss = 0;
 let draws = 0;
 
 ROCK_BUTTON.addEventListener("click", function () {
-  beginRound("rock", (round += 1));
+  beginRound("rock");
 });
 PAPER_BUTTON.addEventListener("click", function () {
-  beginRound("paper", (round += 1));
+  beginRound("paper");
 });
 SCISSORS_BUTTON.addEventListener("click", function () {
-  beginRound("scissors", (round += 1));
+  beginRound("scissors");
 });
 
-function beginRound(playerSelection, round) {
+function beginRound(playerSelection) {
   let playerChoice = playerSelection;
   let computerChoice = gameChoices[Math.floor(Math.random() * 2)];
-  roundCounter(round);
+  roundCounter();
   console.log(`It is Round ${round}`);
   console.log(`The player chose ${playerChoice}`);
   console.log(`The computer chose ${computerChoice}`);
@@ -42,8 +42,8 @@ function beginRound(playerSelection, round) {
   }
 }
 
-function roundCounter(round, wins, loss) {
-  if (round <= 5) {
+function roundCounter() {
+  if ((round <= 5) && (wins < 3) && (loss < 3) && (draws < 3)){
     roundUpdate(round);
   } else if (round == 5) {
     
@@ -52,8 +52,9 @@ function roundCounter(round, wins, loss) {
   }
 }
 
-function roundUpdate(round) {
+function roundUpdate() {
   if (round < 6) {
+    round = round + 1;
     ROUND_H1.textContent = "Rounds: " + round;
   }
 }
