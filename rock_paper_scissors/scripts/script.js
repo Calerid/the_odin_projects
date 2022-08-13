@@ -43,12 +43,17 @@ function beginRound(playerSelection) {
 }
 
 function roundCounter() {
-  if ((round <= 5) && (wins < 3) && (loss < 3) && (draws < 3)){
-    roundUpdate(round);
-  } else if (round == 5) {
-    
-  } else if (round === 6){
+  if (wins >= 3){
+    alert("You win!");
     resetGame();
+  } else if(loss >= 3){
+    alert("You Lose!");
+    resetGame();
+  } else if (draws >= 3){
+    alert("This game was a draw")
+    resetGame();
+  } else if ((round <= 5) && (wins < 3) && (loss < 3) && (draws < 3)){
+    roundUpdate(round);
   }
 }
 
@@ -128,8 +133,8 @@ function playScissors(computerChoice){
 }
 
 function logScore(){
-  console.log(round);
-  console.log(wins);
-  console.log(loss);
-  console.log(draws);
+  console.log(`Round: ${round}`);
+  console.log(`Wins: ${wins}`);
+  console.log(`Losses: ${loss}`);
+  console.log(`Draws: ${draws}`);
 }
