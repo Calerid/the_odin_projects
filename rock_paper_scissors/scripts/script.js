@@ -27,33 +27,27 @@ SCISSORS_BUTTON.addEventListener("click", function () {
 function beginRound(playerSelection) {
   let playerChoice = playerSelection;
   let computerChoice = gameChoices[Math.floor(Math.random() * 2)];
-  roundCounter();
   console.log(`It is Round ${round}`);
   console.log(`The player chose ${playerChoice}`);
   console.log(`The computer chose ${computerChoice}`);
-  if (playerChoice === computerChoice){
-    drawsUpdate();
-  } else if (playerChoice === "rock"){
-    playRock(computerChoice);
-  } else if (playerChoice === "paper"){
-    playPaper(computerChoice);
-  } else {
-    playScissors(computerChoice);
-  }
-}
+  roundCounter(playerChoice, computerChoice);
 
 function roundCounter() {
   if (wins >= 3){
     alert("You win!");
     resetGame();
-  } else if(loss >= 3){
+  } else if (loss >= 3){
     alert("You Lose!");
     resetGame();
   } else if (draws >= 3){
     alert("This game was a draw")
     resetGame();
-  } else if ((round <= 5) && (wins < 3) && (loss < 3) && (draws < 3)){
+  } else if (round == 5){
+    alert("This game was a draw")
+    resetGame();
+  } else if (round <= 5){
     roundUpdate(round);
+    roundPathing(playerChoice, computerChoice);
   }
 }
 
@@ -73,6 +67,19 @@ function resetGame(){
   WIN_H2.textContent = "Wins: " + wins;
   LOSS_H2.textContent = "loss: " + loss;
   DRAW_H2.textContent = "Draws: " + draws;
+}
+
+function roundPathing(){
+  if (playerChoice === computerChoice){
+    drawsUpdate();
+  } else if (playerChoice === "rock"){
+    playRock(computerChoice);
+  } else if (playerChoice === "paper"){
+    playPaper(computerChoice);
+  } else {
+    playScissors(computerChoice);
+  }
+}
 }
 
 function winsUpdate(){
