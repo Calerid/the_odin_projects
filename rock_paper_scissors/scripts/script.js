@@ -34,11 +34,11 @@ function beginRound(playerSelection, round) {
   if (playerChoice === computerChoice){
     drawsUpdate();
   } else if (playerChoice === "rock"){
-    playRock();
+    playRock(computerChoice);
   } else if (playerChoice === "paper"){
-    playPaper();
+    playPaper(computerChoice);
   } else {
-    playScissors();
+    playScissors(computerChoice);
   }
 }
 
@@ -93,3 +93,42 @@ function drawsUpdate(){
   return draws;
 }
 
+function playRock(computerChoice){
+ if (computerChoice == "scissors"){
+  console.log("scissors wins")
+  winsUpdate();
+ } else if (computerChoice == "paper"){
+  console.log("paper wins")
+  lossUpdate();
+ }
+}
+
+
+function playPaper(computerChoice){
+  if (computerChoice == "rock"){
+    console.log("rock wins");
+    winsUpdate()
+  } else if (computerChoice == "scissors"){
+    console.log("scissors wins");
+    lossUpdate();
+  }
+}
+
+
+function playScissors(computerChoice){
+  if (computerChoice == "paper"){
+    console.log("paper wins");
+    winsUpdate();
+  } else if (computerChoice == "rock"){
+    console.log("rock wins");
+    lossUpdate();
+  }
+
+}
+
+function logScore(){
+  console.log(round);
+  console.log(wins);
+  console.log(loss);
+  console.log(draws);
+}
