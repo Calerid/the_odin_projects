@@ -3,5 +3,13 @@ h1{
 }
 .container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    flex-grow: auto;
+}
+.box{
+    height: 25px;
+    width: 25px;;
+    background-color: black;
+    margin: 2px;
 }
