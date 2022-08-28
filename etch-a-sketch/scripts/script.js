@@ -17,6 +17,7 @@ function deployDefaultGrid(){
 
 function createGrid(e){
     console.log(e);
+    gridErase();
     for (let i = 1; i <= e; i++){
         let newDiv = document.createElement('div');
         newDiv.setAttribute('id', `${i}`)
@@ -28,5 +29,7 @@ function createGrid(e){
 }
 
 function gridErase(){
-    gridContainer.forEach(gridContainer.removeChild())
+    while (gridContainer.firstChild) {
+        gridContainer.removeChild(gridContainer.firstChild);
+    }
 }
