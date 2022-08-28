@@ -1,15 +1,34 @@
 h1{
     text-align: center;
 }
-.container{
+
+.flex-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     flex-grow: auto;
+    margin: auto;
+    margin-top: 50px;
 }
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(2px, 55px));
+    grid-gap: 16px;
+    align-items:center;
+    margin: auto;
+    margin-top: 20px;
+  }
+
 .box{
-    height: 25px;
-    width: 25px;;
+    text-align: center;
+    color: white;
+    min-height: 40px;
+    min-width: 40px;
+    margin: 1px;
     background-color: black;
-    margin: 2px;
+    padding: 0%;
+}
+#grid-container{
+    height: 400px;
+    width: 850px;
 }
