@@ -12,23 +12,25 @@ h1{
 }
 .container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(2px, 55px));
+    grid-template-columns: repeat(auto-fill, minmax(1px, 40px));
     grid-gap: 16px;
     align-items:center;
     margin: auto;
     margin-top: 20px;
+    row-gap: 1px;
+    column-gap: 15px;
   }
 
 .box{
     text-align: center;
     color: white;
-    min-height: 40px;
-    min-width: 40px;
+    min-height: 50px;
+    min-width: 50px;
     margin: 1px;
     background-color: black;
     padding: 0%;
 }
 #grid-container{
     height: 400px;
-    width: 850px;
+    width: 910px;
 }

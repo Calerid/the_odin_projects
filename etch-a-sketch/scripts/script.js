@@ -5,7 +5,7 @@ gridSelect.addEventListener('change', () => createGrid(gridSelect.value));
 
 function createGrid(e){
     console.log(e);
-    for (let i = 0; i <= e; i++){
+    for (let i = 1; i <= e; i++){
         let newDiv = document.createElement('div');
         newDiv.setAttribute('id', `${i}`)
         newDiv.setAttribute('class', 'box');
