@@ -1,7 +1,18 @@
+body{
+    background-color: rgb(62, 77, 77);
+}
 h1{
     text-align: center;
+    margin-bottom: -70px;
+    padding-bottom: -70px;
 }
-
+#etch-a-text{
+    color: gold;
+    font-family: Courgette, sans-serif;
+}
+#h1-container{
+    margin-bottom: 75px;
+}
 .flex-container{
     display: flex;
     flex-wrap: wrap;
@@ -12,25 +23,26 @@ h1{
 }
 .container{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(1px, 40px));
+    grid-template-columns: repeat(auto-fill, minmax(1px, 60px));
     grid-gap: 16px;
     align-items:center;
     margin: auto;
     margin-top: 20px;
-    row-gap: 1px;
-    column-gap: 15px;
+    row-gap: 0px;
+    column-gap: 0px;
   }
 
 .box{
+    min-width: 60px;
     text-align: center;
     color: white;
-    min-height: 50px;
-    min-width: 50px;
-    margin: 1px;
+    margin: 0px;
     background-color: black;
     padding: 0%;
 }
 #grid-container{
-    height: 400px;
-    width: 910px;
+    border: 60px solid rgb(243, 7, 7);
+    border-radius: 5%;
+    height: 720px;
+    width: 960px;
 }

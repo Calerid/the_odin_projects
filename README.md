@@ -1,2 +1,7 @@
 # odin-recipes
-A second repository with TOP projects to mark progress and evaluate my skills. 
+These are my submissions for The Odin Project. 
+
+Current completed projects:
+Recipes
+Rock Paper Scissors
+Etch-A-Sketch
