@@ -12,25 +12,27 @@ h1{
 }
 .container{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(1px, 40px));
+    grid-template-columns: repeat(auto-fill, minmax(1px, 60px));
     grid-gap: 16px;
     align-items:center;
     margin: auto;
     margin-top: 20px;
-    row-gap: 1px;
-    column-gap: 15px;
+    row-gap: 0px;
+    column-gap: 0px;
   }
 
 .box{
     text-align: center;
     color: white;
-    min-height: 50px;
-    min-width: 50px;
-    margin: 1px;
+    min-height: 60px;
+    min-width: 60px;
+    margin: 0px;
     background-color: black;
     padding: 0%;
 }
 #grid-container{
-    height: 400px;
-    width: 910px;
+    border: 20px;
+    border-style: double;
+    height: 960px;
+    width: 960px;
 }
