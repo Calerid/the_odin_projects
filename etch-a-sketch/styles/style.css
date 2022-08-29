@@ -1,0 +1,36 @@
+h1{
+    text-align: center;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-grow: auto;
+    margin: auto;
+    margin-top: 50px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(1px, 40px));
+    grid-gap: 16px;
+    align-items:center;
+    margin: auto;
+    margin-top: 20px;
+    row-gap: 1px;
+    column-gap: 15px;
+  }
+
+.box{
+    text-align: center;
+    color: white;
+    min-height: 50px;
+    min-width: 50px;
+    margin: 1px;
+    background-color: black;
+    padding: 0%;
+}
+#grid-container{
+    height: 400px;
+    width: 910px;
+}
