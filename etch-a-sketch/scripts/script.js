@@ -25,7 +25,11 @@ function createGrid(e){
         newDiv.textContent = `${i}`;
         gridContainer.appendChild(newDiv);
     }
-    
+    return newBox = document.querySelectorAll('.box');
+}
+
+function changeColor(){
+    return '#'+Math.floor(Math.random()*16777215).toString(16);
 }
 
 function gridErase(){
@@ -33,3 +37,10 @@ function gridErase(){
         gridContainer.removeChild(gridContainer.firstChild);
     }
 }
+
+setInterval(() =>{
+let newBox = gridContainer.querySelectorAll('.box');
+newBox.forEach(box => box.addEventListener('mouseover', function(){
+    box.style.backgroundColor = `${changeColor()}`;
+}) )
+}, 500);
