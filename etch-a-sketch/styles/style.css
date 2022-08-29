@@ -30,10 +30,9 @@ h1{
   }
 
 .box{
+    min-width: 60px;
     text-align: center;
     color: white;
-    min-height: 60px;
-    min-width: 60px;
     margin: 0px;
     background-color: black;
     padding: 0%;
@@ -41,6 +40,6 @@ h1{
 #grid-container{
     border: 60px solid rgb(243, 7, 7);
     border-radius: 5%;
-    height: 960px;
+    height: 720px;
     width: 960px;
 }
