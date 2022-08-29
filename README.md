@@ -1,5 +1,5 @@
 # odin-recipes
-These are my projects for The Odin Project. 
+These are my submissions for The Odin Project. 
 
 Current completed projects:
 Recipes
