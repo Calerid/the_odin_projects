@@ -1,7 +1,15 @@
 h1{
     text-align: center;
+    margin-bottom: -70px;
+    padding-bottom: -70px;
 }
-
+#etch-a-text{
+    color: gold;
+    font-family: Courgette, sans-serif;
+}
+#h1-container{
+    margin-bottom: 200px;
+}
 .flex-container{
     display: flex;
     flex-wrap: wrap;
@@ -31,8 +39,8 @@ h1{
     padding: 0%;
 }
 #grid-container{
-    border: 20px;
-    border-style: double;
+    border: 60px solid rgb(243, 7, 7);
+    border-radius: 5%;
     height: 960px;
     width: 960px;
 }
