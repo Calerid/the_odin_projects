@@ -25,7 +25,6 @@ function createGrid(e){
         newDiv.textContent = `${i}`;
         gridContainer.appendChild(newDiv);
     }
-    return newBox = document.querySelectorAll('.box');
 }
 
 function changeColor(){
