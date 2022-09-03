@@ -2,6 +2,9 @@
 These are my submissions for The Odin Project. 
 
 Current completed projects:
-Recipes
-Rock Paper Scissors
-Etch-A-Sketch
+
+1# Recipes
+
+2# Rock Paper Scissors
+
+3# Etch-A-Sketch
