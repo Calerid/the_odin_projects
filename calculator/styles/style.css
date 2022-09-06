@@ -1,0 +1,34 @@
+html{
+    background-color: gray;
+}
+#calculator{
+    border-radius: 20px;
+    background-color: rgb(34, 71, 50);
+    padding: 20px;
+    position: fixed;
+    top: 35%;
+    left: 45%;
+    border: solid 2px rgb(179, 22, 22);
+}
+#top-bar{
+    display: flex;
+    margin-bottom: 10px;
+}
+#clear{
+    margin-left: 20px;
+}
+#screen{
+    background-color: white;
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 240px;
+}
+.btn{
+    font: 900;
+    margin: 5px;
+    background-color: rgb(23, 107, 107);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 75px;
+    height: 75px;
+}
