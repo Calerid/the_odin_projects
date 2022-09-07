@@ -51,11 +51,52 @@ h2{
     width: 75px;
     height: 75px;
 }
+.operator{
+    box-shadow: 2px 2px 2px 2px black;
+    border: solid 2px rgb(20, 18, 18);
+    font-size: larger;
+    font-weight: bold;
+    margin: 5px;
+    background-color: rgb(223, 138, 11);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 75px;
+    height: 75px;
+}
+.clear{
+    box-shadow: 2px 2px 2px 2px black;
+    border: solid 2px rgb(20, 18, 18);
+    font-size: larger;
+    font-weight: bold;
+    margin: 5px;
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 75px;
+    height: 75px;
+}
 .btn:hover{
     background-color: rgb(48, 94, 94);
     color: rgb(255, 0, 0);
 }
 .btn:active{
+    border-color: yellow;
+    box-shadow: 2px 2px yellow;
+}
+.operator:hover{
+    background-color: rgb(212, 16, 170);
+    color: rgb(241, 241, 241);
+}
+.operator:active{
+    border-color: yellow;
+    box-shadow: 2px 2px yellow;
+}
+.clear:hover{
+    background-color: rgb(255, 0, 0);
+    box-shadow: 2px 2px 2px rgb(255, 0, 0);
+    color: rgb(241, 241, 241);
+}
+.clear:active{
     border-color: yellow;
     box-shadow: 2px 2px yellow;
 }
