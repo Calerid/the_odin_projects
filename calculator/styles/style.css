@@ -1,34 +1,61 @@
 html{
-    background-color: gray;
+    background-color: rgb(61, 55, 55);
+    text-align: center;
+}
+h1{
+    color: rgb(26, 211, 20);
+    text-shadow: 10px;
+}
+h2{
+    padding: 0px;
+    margin: 0;
+    font-size: 45px;
 }
 #calculator{
+    box-shadow: 2px 2px 5px black;
     border-radius: 20px;
-    background-color: rgb(34, 71, 50);
+    background-color: rgb(33, 43, 37);
+    color: rgb(0, 255, 21);
     padding: 20px;
     position: fixed;
-    top: 35%;
-    left: 45%;
-    border: solid 2px rgb(179, 22, 22);
+    top: 25%;
+    left: 42%;
 }
 #top-bar{
     display: flex;
     margin-bottom: 10px;
 }
 #clear{
-    margin-left: 20px;
+    margin-left: 15px;
 }
 #screen{
-    background-color: white;
-    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Orbitron', sans-serif;
+    background-color: rgb(34, 1, 1);
+    box-shadow: 1px 1px;
+    margin-right: 1px;
     margin-left: 5px;
-    width: 240px;
+    width: 250px;
 }
 .btn{
-    font: 900;
+    box-shadow: 2px 2px 2px 2px black;
+    border: solid 2px rgb(20, 18, 18);
+    font-size: larger;
+    font-weight: bold;
     margin: 5px;
-    background-color: rgb(23, 107, 107);
-    color: rgb(255, 255, 255);
+    background-color: rgb(43, 68, 68);
+    color: rgb(8, 255, 70);
     border-radius: 10px;
     width: 75px;
     height: 75px;
+}
+.btn:hover{
+    background-color: rgb(48, 94, 94);
+    color: rgb(255, 0, 0);
+}
+.btn:active{
+    border-color: yellow;
+    box-shadow: 2px 2px yellow;
 }
