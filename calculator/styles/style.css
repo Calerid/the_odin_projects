@@ -12,9 +12,8 @@ h2{
     font-size: 45px;
 }
 #calculator{
-    box-shadow: 2px 2px 5px black;
-    border-radius: 20px;
-    background-color: rgb(33, 43, 37);
+    box-shadow: 2px 2px 5px rgba(122, 116, 116, 0.616);
+    background-color: rgba(161, 190, 173, 0.555);
     color: rgb(0, 255, 21);
     padding: 20px;
     position: fixed;
