@@ -21,22 +21,18 @@ h2{
     left: 42%;
 }
 #top-bar{
-    display: flex;
     margin-bottom: 10px;
 }
 #clear{
     margin-left: 15px;
 }
 #screen{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-family: 'Orbitron', sans-serif;
     background-color: rgb(34, 1, 1);
     box-shadow: 1px 1px;
     margin-right: 1px;
     margin-left: 5px;
-    width: 250px;
+    width: auto;
 }
 .btn{
     box-shadow: 2px 2px 2px 2px black;
@@ -67,11 +63,10 @@ h2{
     border: solid 2px rgb(20, 18, 18);
     font-size: larger;
     font-weight: bold;
-    margin: 5px;
     background-color: rgb(255, 0, 0);
     color: rgb(0, 0, 0);
     border-radius: 10px;
-    width: 75px;
+    width: 245px;
     height: 75px;
 }
 .btn:hover{
