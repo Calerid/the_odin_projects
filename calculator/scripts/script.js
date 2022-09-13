@@ -19,4 +19,6 @@ function storage(e) {
 
 function screenUpdate(e) {}
 
-
+function operate(userInput, operator){
+  
+}
