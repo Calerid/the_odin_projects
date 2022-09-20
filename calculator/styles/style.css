@@ -12,9 +12,8 @@ h2{
     font-size: 45px;
 }
 #calculator{
-    box-shadow: 2px 2px 5px black;
-    border-radius: 20px;
-    background-color: rgb(33, 43, 37);
+    box-shadow: 2px 2px 5px rgba(122, 116, 116, 0.616);
+    background-color: rgba(161, 190, 173, 0.555);
     color: rgb(0, 255, 21);
     padding: 20px;
     position: fixed;
@@ -22,22 +21,18 @@ h2{
     left: 38%;
 }
 #top-bar{
-    display: flex;
     margin-bottom: 10px;
 }
 #clear{
     margin-left: 15px;
 }
 #screen{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-family: 'Orbitron', sans-serif;
     background-color: rgb(34, 1, 1);
     box-shadow: 1px 1px;
     margin-right: 1px;
     margin-left: 5px;
-    width: 250px;
+    width: auto;
 }
 .btn{
     box-shadow: 2px 2px 2px 2px black;
@@ -51,11 +46,51 @@ h2{
     width: 75px;
     height: 75px;
 }
+.operator{
+    box-shadow: 2px 2px 2px 2px black;
+    border: solid 2px rgb(20, 18, 18);
+    font-size: larger;
+    font-weight: bold;
+    margin: 5px;
+    background-color: rgb(223, 138, 11);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 75px;
+    height: 75px;
+}
+.clear{
+    box-shadow: 2px 2px 2px 2px black;
+    border: solid 2px rgb(20, 18, 18);
+    font-size: larger;
+    font-weight: bold;
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 245px;
+    height: 75px;
+}
 .btn:hover{
     background-color: rgb(48, 94, 94);
     color: rgb(255, 0, 0);
 }
 .btn:active{
+    border-color: yellow;
+    box-shadow: 2px 2px yellow;
+}
+.operator:hover{
+    background-color: rgb(212, 16, 170);
+    color: rgb(241, 241, 241);
+}
+.operator:active{
+    border-color: yellow;
+    box-shadow: 2px 2px yellow;
+}
+.clear:hover{
+    background-color: rgb(255, 0, 0);
+    box-shadow: 2px 2px 2px rgb(255, 0, 0);
+    color: rgb(241, 241, 241);
+}
+.clear:active{
     border-color: yellow;
     box-shadow: 2px 2px yellow;
 }
