@@ -1,7 +1,9 @@
 const SCREEN = document.getElementById("screen");
 const BUTTON = document.querySelectorAll(".btn");
 
-var userInput = [];
+var userInputA = "";
+var userInputB = "";
+var userOperator = "";
 
 BUTTON.forEach((e) => {
   e.addEventListener("click", function () {
@@ -11,9 +13,12 @@ BUTTON.forEach((e) => {
 });
 
 function storage(e) {
-  userInput.push(e.value);
-  if (inputValues.length >= 2) {
-    operate(userInput);
+  if ((userOperator.length == 0) && (e.value != "+" || "-" || "/" || "*")){
+    userInputA += e.value;
+  } else if ((userOperator.length == 1) && (e.value != "+" || "-" || "/" || "*")){
+    userInputB += e.value;
+  } else if ((userOperator.length == 0) && (e.value == "+" || "-" || "/" || "*")) { 
+    userOperator = e.value;
   }
 }
 
